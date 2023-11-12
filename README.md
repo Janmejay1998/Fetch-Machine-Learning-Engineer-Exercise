@@ -84,15 +84,15 @@ Linear regression is a linear model that assumes a linear relationship between t
 - **Make sure you have install & run Docker Hub in system before executing below commands**
 - **Build the Docker image:**
   ```
-  docker build -t your_image_name:tag .
+  docker build -t ml:tag .
   ```
 - **Run the Docker container:**
   ```
-  docker run -p 5000:5000 your_image_name:tag
+  docker run -p 5000:5000 ml:tag
   ```
 - **If you want to run the container in the background (detached mode), you can add the -d flag:**
   ```
-  docker run -p 5000:5000 -d your_image_name:tag
+  docker run -p 5000:5000 -d ml:tag
   ```
 Now, you should be able to access your Flask app at `http://localhost:5000` in your web browser.
 
