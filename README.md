@@ -81,7 +81,7 @@ Linear regression is a linear model that assumes a linear relationship between t
 | 31-12-2022 | 389661950 |   
 
 ## Running using Docker guide
-- **Make sure you have install & run Docker Hub in system before executing below commands**
+- **Make sure you have install & run Docker Hub in your local system before executing below commands**
 - **Build the Docker image:**
   ```
   docker build -t ml:tag .
