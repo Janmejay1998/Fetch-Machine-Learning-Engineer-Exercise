@@ -52,4 +52,6 @@ C:.
     - **variables.data-00000-of-00001**
     - **variables.index**
 - **templates:**
-  - **index.html:** Contains flask web service visual design  
+  - **index.html:** Contains flask web service visual design
+## Data Visualization
+![Display Image]()
