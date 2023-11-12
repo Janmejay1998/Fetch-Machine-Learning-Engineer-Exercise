@@ -108,3 +108,7 @@ Now, you should be able to access your Flask app at `http://localhost:5000` in y
   ```
   python app.py
   ```
+## For install required libraries use below command:**
+```
+pip install -r requirements.txt
+```
