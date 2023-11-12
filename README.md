@@ -38,3 +38,5 @@ C:.
 - **model_train.py:** Contains code for training model over 2021 year data.
 - **README.md:** Project documentation.
 - **requirements.txt:** List of Python dependencies.
+- **Generated Data:**
+  - data_visualization.png         
