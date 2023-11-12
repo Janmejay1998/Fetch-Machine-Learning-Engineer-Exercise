@@ -39,4 +39,8 @@ C:.
 - **README.md:** Project documentation.
 - **requirements.txt:** List of Python dependencies.
 - **Generated Data:**
-  - data_visualization.png         
+  - **data_visualization.png**
+  - inference_visualization.png
+  - predicted_receipts.csv
+  - testing_visualization.png
+  - training_visualization.png        
