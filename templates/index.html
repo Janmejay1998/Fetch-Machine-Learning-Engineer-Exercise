@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inference Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <form class="w-full max-w-screen-lg p-6 bg-374151 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" method="post" action="{{ url_for('index') }} " style="background-color: #FCE96A;">
+
+        <div class="mb-6 flex items-center justify-center">
+            {{ form.csrf_token }}
+            <div class="mr-8">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="start_date">Start Date:</label>
+                {{ form.start_date }}
+            </div>
+            <div>
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="end_date">End Date:</label>
+                {{ form.end_date }}
+            </div>
+        </div>
+        <button type="submit" class="w-full text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">Enter</button>
+    </form>
+       
+
+    {% if data %}
+        <div class="w-full max-w-screen-lg p-6 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" style="background-color: #76A9FA">
+            {{ plot_div | safe }}
+        </div>
+        <div class="relative overflow-x-auto mx-auto">
+            <style>
+                table {
+                    width: 40%;
+                    border-collapse: collapse;
+                    margin-top: 1em;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #31C48D;
+                }
+
+                td {
+                    background-color: #F98080;
+                }
+                .table-name {
+                    text-align: center;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin-bottom: 1em;
+                }
+            </style>
+            <div class="table-name">Prediction Receipts</div>
+            {{ data | safe }}
+        </div>
+        
+    {% endif %}
+    
+    
+
+</body>
+</html>
