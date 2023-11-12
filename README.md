@@ -1,6 +1,6 @@
 # Fetch-Machine-Learning-Engineer-Exercise
 
-# Directory
+## Directory Structure
 ```
 C:.
 |   app.py
