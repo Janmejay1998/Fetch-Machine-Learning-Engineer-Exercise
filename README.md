@@ -39,8 +39,17 @@ C:.
 - **README.md:** Project documentation.
 - **requirements.txt:** List of Python dependencies.
 - **Generated Data:**
-  - **data_visualization.png**
-  - inference_visualization.png
-  - predicted_receipts.csv
-  - testing_visualization.png
-  - training_visualization.png        
+  - **data_visualization.png:** Showing data visualization of data_daily.csv.
+  - **inference_visualization.png:** Showing inference visualization.
+  - **predicted_receipts.csv:** Storing predictions values of each month of year 2022.
+  - **testing_visualization.png:** Showing test visualization.
+  - **training_visualization.png:** Showing train visualization.
+- **Reciepts_model:** Saved trained model for using in inference.
+  - **fingerprint.pb**
+  - **saved_model.pb**
+  - **assets**
+  - **variables**
+    - **variables.data-00000-of-00001**
+    - **variables.index**
+- **templates:**
+  - **index.html:** Contains flask web service visual design  
