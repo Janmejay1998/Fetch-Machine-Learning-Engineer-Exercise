@@ -79,3 +79,18 @@ Linear regression is a linear model that assumes a linear relationship between t
 | 31-10-2022 | 376337660 |   
 | 30-11-2022 | 370644960 |   
 | 31-12-2022 | 389661950 |   
+
+## Running using Docker guide
+- **Build the Docker image:**
+  ```
+  docker build -t your_image_name:tag .
+  ```
+- **Run the Docker container:**
+  ```
+  docker run -p 5000:5000 your_image_name:tag
+  ```
+- **If you want to run the container in the background (detached mode), you can add the -d flag:**
+  ```
+  docker run -p 5000:5000 -d your_image_name:tag
+  ```
+Now, you should be able to access your Flask app at `http://localhost:5000` in your web browser.
