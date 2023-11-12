@@ -1,6 +1,6 @@
 # Fetch-Machine-Learning-Engineer-Exercise
->
-###
+
+<pre>
 ├── Generated Data                  
 ├── Receipts_model                    
 ├── templates                    
@@ -10,5 +10,4 @@
 ├── inference.py
 ├── model_train.py
 └── requirements.txt
-###
->
+</pre>
