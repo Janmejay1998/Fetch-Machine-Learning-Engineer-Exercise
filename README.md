@@ -94,7 +94,7 @@ Linear regression is a linear model that assumes a linear relationship between t
   ```
   docker run -p 5000:5000 -d ml:tag
   ```
-Now, you should be able to access your Flask app at `http://localhost:5000` in your web browser.
+Now, you should be able to access your Flask app at http://localhost:5000/ in your web browser.
 
 ## Running in local system without Docker
 - **Run the train `model_train.py` file:**
@@ -110,7 +110,7 @@ Now, you should be able to access your Flask app at `http://localhost:5000` in y
   python app.py
   ```
 - **Flask Web Service App:**
-  - Flask application is accessible on ![http://localhost:5000/](http://localhost:5000/)
+  - Flask application is accessible on http://localhost:5000/
   - ![Display Image](https://github.com/Janmejay1998/Fetch-Machine-Learning-Engineer-Exercise/blob/main/Generated%20Data/Screenshot%20(211).png)
     
 ## For install required libraries use below command:
