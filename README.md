@@ -60,6 +60,6 @@ C:.
 ![Display Image](https://github.com/Janmejay1998/Fetch-Machine-Learning-Engineer-Exercise/blob/main/Generated%20Data/inference_visualization.png)
 
 ## Model Architecture
-```
+
 Linear regression is a linear model that assumes a linear relationship between the input variables and the single output variable. The architecture of the model consists of a single layer with two parameters, weights and bias. The weights are initialized randomly and updated during training to minimize the difference between the predicted output and the actual output. The bias is initialized to zero and also updated during training. The model takes an input tensor X and returns the predicted output by multiplying X with the weights and adding the bias. The predicted output is then compared with the actual output to calculate the loss, which is minimized using an optimization algorithm such as gradient descent. The model can be used for both simple and multiple linear regression problems.
-```
+
