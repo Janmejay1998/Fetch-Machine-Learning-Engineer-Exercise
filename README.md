@@ -94,3 +94,17 @@ Linear regression is a linear model that assumes a linear relationship between t
   docker run -p 5000:5000 -d your_image_name:tag
   ```
 Now, you should be able to access your Flask app at `http://localhost:5000` in your web browser.
+
+## Running in local system without Docker
+- **Run the train `model_train.py` file:**
+  ```
+  python model_train.py
+  ```
+- **Run the inference `inference_train.py` file:**
+  ```
+  python inference_train.py
+  ```
+- **Finally run the Flask `app.py` file:**
+  ```
+  python app.py
+  ```
