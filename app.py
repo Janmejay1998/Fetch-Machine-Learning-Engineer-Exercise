@@ -14,7 +14,7 @@ save_directory = 'Generated Data/'
 if not os.path.exists(save_directory):
     os.makedirs(save_directory)
 
-# Inference code
+# Define the Linear Regression Model
 class LinearRegression(tf.Module):
     def __init__(self, input_size, output_size):
         self.W = tf.Variable(tf.random.normal([input_size, output_size]), name='weights')
@@ -78,7 +78,7 @@ def index():
         fig.update_layout(title_text='Predicted Monthly Receipts Count Over Time')
         fig.update_xaxes(title_text='Time Period')
         fig.update_yaxes(title_text='Number of Receipts')
-        # Add scatter plot
+        # Adding scatter plot
         fig.add_trace(go.Scatter(x=data['Date'], y=data['Receipt_Count'], mode='markers', marker=dict(color='#93E9BE'), name='Actual Daily Receipt Count'))
 
         plot_div = fig.to_html(full_html=False)

@@ -9,6 +9,7 @@ save_directory = 'Generated Data/'
 if not os.path.exists(save_directory):
     os.makedirs(save_directory)
 
+# Define the Linear Regression Model
 class LinearRegression(tf.Module):
     def __init__(self, input_size, output_size):
         self.W = tf.Variable(tf.random.normal([input_size, output_size]), name='weights')
@@ -17,12 +18,14 @@ class LinearRegression(tf.Module):
     def __call__(self, X):
         return tf.matmul(X, self.W) + self.b
 
-def mean_squared_error(y_true, y_pred):
+def mean_squared_error(y_true, y_pred):                     # Mean Square Error function
     return tf.reduce_mean(tf.square(y_true - y_pred))
     
 df = pd.read_csv('data_daily.csv', parse_dates=['# Date'], index_col=None)  # Load the dataset
 df.rename(columns={"# Date": "Date"}, inplace=True)                         # Rename Date Column
 
+
+# Plot the basic data visualization using Seaborn
 plt.figure(figsize=(15, 7))
 sns.scatterplot(x=df['Date'], y=df['Receipt_Count'], color='#93E9BE', label='Actual Daily Receipt Count')
 plt.title('Comparison of Daily Receipt Trends of Year 2021')
@@ -33,11 +36,10 @@ plt.legend()
 plt.savefig(os.path.join(save_directory, 'data_visualization.png'), bbox_inches='tight')
 plt.show()
 
-
 X_np = np.arange(0, 365) / 364.0
 y_np = df['Receipt_Count'].to_numpy() / np.max(df['Receipt_Count'])
 
-train_size = int(0.8 * len(X_np))
+train_size = int(0.8 * len(X_np))    # Spliting train and test date in 80:20 ratio
 
 X_train, X_test = X_np[:train_size], X_np[train_size:]
 y_train, y_test = y_np[:train_size], y_np[train_size:]
@@ -81,6 +83,7 @@ plt.legend()
 plt.savefig(os.path.join(save_directory, 'training_visualization.png'), bbox_inches='tight')
 plt.show()
 
+# Making X_test and y_test tensors
 X_test_tensor = tf.constant(X_test, dtype=tf.float32)[:, tf.newaxis]
 y_test_tensor = tf.constant(y_test, dtype=tf.float32)[:, tf.newaxis]
 

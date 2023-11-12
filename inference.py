@@ -9,7 +9,7 @@ save_directory = 'Generated Data/'
 if not os.path.exists(save_directory):
     os.makedirs(save_directory)
 
-#Define the model
+# Define the Linear Regression Model
 class LinearRegression(tf.Module):
     def __init__(self, input_size, output_size):
         self.W = tf.Variable(tf.random.normal([input_size, output_size]), name='weights')
@@ -21,7 +21,7 @@ class LinearRegression(tf.Module):
 data = pd.read_csv('data_daily.csv', parse_dates=['# Date'], index_col=None)  # Load the dataset
 data.rename(columns={"# Date": "Date"}, inplace=True)                         # Rename Date Column
 
-date_range = pd.date_range(start='2022-01-01', end='2022-12-31', freq='D')
+date_range = pd.date_range(start='2022-01-01', end='2022-12-31', freq='D')      # Creating Inference Dataframe
 inference_data = pd.DataFrame({'Date': date_range})
 
 initial_date = np.datetime64('2021-01-01')
@@ -39,10 +39,9 @@ model.b.assign(loaded_model.b)
 
 model(tf.constant([[0.0]], dtype=tf.float32))  # Run the model to initialize variables
 
-y_predict = model(X)  # Run the model to make predictions
+y_predict = model(X)                            # Run the model to make predictions
 y_predict *= np.max(data['Receipt_Count'].to_numpy())  
 
-# Assuming y_predict_tensor is your TensorFlow tensor
 df = pd.DataFrame({
     'Date': pd.date_range(start='2022-01-01', periods=365),
     'Receipts': y_predict.numpy().squeeze()
