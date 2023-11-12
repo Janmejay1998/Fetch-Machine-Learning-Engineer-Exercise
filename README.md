@@ -10,7 +10,6 @@ C:.
 |   model_train.py
 |   README.md
 |   requirements.txt
-|   tree.txt
 |   
 +---Generated Data
 |       data_visualization.png
@@ -31,4 +30,11 @@ C:.
 \---templates
         index.html
 ```        
-
+## Project Structure
+- **app.py:** Flask code for starting web service application.
+- **data_daily.csv:** Contains data of number of the observed scanned receipts each day for the year 2021.
+- **Dockerfile:** Configuration for Docker containerization.
+- **inference.py:** Contains code for making inference on 2022 year.
+- **model_train.py:** Contains code for training model over 2021 year data.
+- **README.md:** Project documentation.
+- **requirements.txt:** List of Python dependencies.
