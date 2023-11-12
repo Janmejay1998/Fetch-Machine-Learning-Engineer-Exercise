@@ -54,4 +54,4 @@ C:.
 - **templates:**
   - **index.html:** Contains flask web service visual design
 ## Data Visualization
-![Display Image]()
+![Display Image](https://github.com/Janmejay1998/Fetch-Machine-Learning-Engineer-Exercise/blob/main/Generated%20Data/data_visualization.png)
