@@ -110,6 +110,7 @@ Now, you should be able to access your Flask app at `http://localhost:5000` in y
   python app.py
   ```
 - **Flask Web Service App:**
+  - Flask application is accessible on ![](http://localhost:8000/)
   - ![Display Image](https://github.com/Janmejay1998/Fetch-Machine-Learning-Engineer-Exercise/blob/main/Generated%20Data/Screenshot%20(211).png)
     
 ## For install required libraries use below command:
