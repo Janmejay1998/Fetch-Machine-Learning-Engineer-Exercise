@@ -1,5 +1,5 @@
 # Fetch-Machine-Learning-Engineer-Exercise
-
+```
 C:.
 |   app.py
 |   data_daily.csv
@@ -28,5 +28,5 @@ C:.
 |           
 \---templates
         index.html
-        
+```        
 
