@@ -81,19 +81,20 @@ Linear regression is a linear model that assumes a linear relationship between t
 | 31-12-2022 | 389661950 |   
 
 ## Running using Docker guide
+- **Make sure you have install & run Docker Hub in system before executing below commands**
 - **Build the Docker image:**
   ```
-  docker build -t your_image_name:tag .
+  docker build -t ml:tag .
   ```
 - **Run the Docker container:**
   ```
-  docker run -p 5000:5000 your_image_name:tag
+  docker run -p 5000:5000 ml:tag
   ```
 - **If you want to run the container in the background (detached mode), you can add the -d flag:**
   ```
-  docker run -p 5000:5000 -d your_image_name:tag
+  docker run -p 5000:5000 -d ml:tag
   ```
-Now, you should be able to access your Flask app at `http://localhost:5000` in your web browser.
+Now, you should be able to access your Flask app at http://localhost:5000 in your web browser.
 
 ## Running in local system without Docker
 - **Run the train `model_train.py` file:**
@@ -109,6 +110,7 @@ Now, you should be able to access your Flask app at `http://localhost:5000` in y
   python app.py
   ```
 - **Flask Web Service App:**
+  - Flask application is accessible on http://localhost:5000
   - ![Display Image](https://github.com/Janmejay1998/Fetch-Machine-Learning-Engineer-Exercise/blob/main/Generated%20Data/Screenshot%20(211).png)
     
 ## For install required libraries use below command:

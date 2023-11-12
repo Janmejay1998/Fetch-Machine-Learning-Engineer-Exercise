@@ -18,5 +18,8 @@ RUN python model_train.py
 # Run inference.py to generate model predictions 
 RUN python inference.py
 
+# Define environment variable
+ENV FLASK_APP=app.py
+
 # Run app.py when the container launches
-CMD ["python", "app.py"]
+CMD ["flask", "run", "--host=0.0.0.0"]
