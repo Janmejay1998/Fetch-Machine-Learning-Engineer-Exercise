@@ -101,7 +101,7 @@ Now, you should be able to access your Flask app at http://localhost:5000 in you
   ```
   python model_train.py
   ```
-- **Run the inference `inference_train.py` file:**
+- **Run the inference `inference.py` file:**
   ```
   python inference_train.py
   ```
