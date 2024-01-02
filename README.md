@@ -1,5 +1,5 @@
 ---
-title: TFReceiptPredictor
+title: HFReceiptPredict: Linear Regression with TensorFlow
 emoji: 🤗
 colorFrom: red
 colorTo: yellow
