@@ -1,8 +1,8 @@
 ---
-title: Basic Docker SDK Space
-emoji: 🐳
-colorFrom: purple
-colorTo: gray
+title: TFReceiptPredictor
+emoji: 🤗
+colorFrom: yellow
+colorTo: orange
 sdk: docker
 app_port: 5000
 ---
