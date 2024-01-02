@@ -1,10 +1,11 @@
 ---
 title: TFReceiptPredictor
 emoji: 🤗
-colorFrom: yellow
-colorTo: blue
+colorFrom: red
+colorTo: yellow
 sdk: docker
 app_port: 5000
+license: mit
 ---
 
 # Fetch-Machine-Learning-Engineer-Exercise
