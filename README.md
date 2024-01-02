@@ -2,7 +2,7 @@
 title: TFReceiptPredictor
 emoji: 🤗
 colorFrom: yellow
-colorTo: orange
+colorTo: blue
 sdk: docker
 app_port: 5000
 ---
